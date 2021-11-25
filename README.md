@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-## Purpose
+## About
 
-The purpose of my personal portfolio is to showcase the websites that I've built or contibuted to.
+The purpose of my personal portfolio is to showcase the websites that I designed and built or websites that I have contributed to.
 
 ## Technologies
 

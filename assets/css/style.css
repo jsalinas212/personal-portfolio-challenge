@@ -205,6 +205,41 @@ content section p {
     flex-direction: column;
     justify-content: center;
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px solid #4c6877;
+    margin-top: 25px;
+}
+
+.project-container img {
+    flex: 0;
+    width: 400px;
+}
+
+.project-info {
+    padding: 0 25px;
+    flex: 1;
+}
+
+.project-info h3 {
+    margin: 15px 0;
+    font-family: var(--headline-style);
+    font-size: 22px;
+}
+
+.project-info p {
+    font-family: var(--text-style);
+    margin-top: 20px;
+}
+
+.project-info ul {
+    font-family: var(--text-style);
+    margin: 20px 0 20px 50px;
+    font-weight: bolder;
+}
 /* Project Content Style End */
 
 /* Contribution Content Style Begin */

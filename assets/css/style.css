@@ -216,7 +216,8 @@ content section p {
 
 .project-container img {
     flex: 0;
-    width: 400px;
+    width: auto;
+    height: 500px;
 }
 
 .project-info {

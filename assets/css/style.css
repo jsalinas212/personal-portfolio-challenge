@@ -1,11 +1,11 @@
-/* Import Google Fonts */
+/* Import Google Fonts aebee2*/
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Source+Code+Pro:wght@200&display=swap');
 
 :root {
-    --primary-color: #9db3e2;
-    --secondary-color: #426172;
-    --tertiary-color: #212d42;
+    --primary-color: #4c6877;
+    --secondary-color: #aebee2;
+    --tertiary-color: #151e2e;
     --background-img-url: url("../images/hero-bg.jpg");
     --shadow-style: 0 0 10px rgba(0, 0, 0, 0.5);
     --headline-style: 'Play', sans-serif;
@@ -19,7 +19,7 @@
 }
 
 body {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-family: var(--text-style);
 }
 
@@ -100,13 +100,13 @@ header nav ul li a:hover {
 .hero-blurb {
     width: 45%;
     text-align: right;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 20px 80px 20px 20px;
     color: #fff;
     font-size: 18px;
     line-height: 1.2;
     flex: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px 0 0 15px;
 }
 
@@ -119,8 +119,10 @@ header nav ul li a:hover {
 }
 
 .hero-blurb p {
-    margin-top: 5%;
+    margin-top: 3%;
+    font-size: 20px;
     font-family: var(--headline-style);
+    color: var(--secondary-color);
 }
 
 .hero-sm {
@@ -128,7 +130,7 @@ header nav ul li a:hover {
     padding: 10px 80px 10px 15px;
     width: 50px;
     flex: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px 0 0 15px;
 }
 

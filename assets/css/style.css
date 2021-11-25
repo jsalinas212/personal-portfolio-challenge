@@ -1,9 +1,15 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Source+Code+Pro:wght@200&display=swap');
+
 :root {
     --primary-color: #9db3e2;
     --secondary-color: #426172;
     --tertiary-color: #212d42;
     --background-img-url: url("../images/hero-bg.jpg");
     --shadow-style: 0 0 10px rgba(0, 0, 0, 0.5);
+    --headline-style: 'Play', sans-serif;
+    --text-style: 'Source Code Pro', monospace;
 }
 
 * {
@@ -14,7 +20,7 @@
 
 body {
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--text-style);
 }
 
 /* Header Style Begin */
@@ -41,11 +47,13 @@ header h1 {
     margin: 0;
     text-shadow: var(--shadow-style);
     z-index: 9999;
+    font-family: var(--headline-style);
 }
 
 header a {
     text-decoration: none;
     color: var(--primary-color);
+    font-family: var(--headline-style);
 }
 
 header nav {
@@ -107,10 +115,12 @@ header nav ul li a:hover {
     color: var(--primary-color);
     text-shadow: var(--shadow-style);
     border-bottom: 1px solid var(--primary-color);
+    font-family: var(--headline-style);
 }
 
 .hero-blurb p {
     margin-top: 5%;
+    font-family: var(--headline-style);
 }
 
 .hero-sm {
@@ -146,6 +156,7 @@ header nav ul li a:hover {
 /* Content Style Begin */
 content {
     padding: 60px;
+    font-family: var(--headline-style);
 }
 /* Content Style End */
 
@@ -160,6 +171,7 @@ footer {
 }
 
 footer h2 {
+    font-family: var(--headline-style);
     color: var(--primary-color);
     font-size: 30px;
     margin: 0;
@@ -182,12 +194,12 @@ footer h2 {
 
 .primary-border {
     border-color: var(--primary-color);
-  }
-  
-  .secondary-border {
+}
+
+.secondary-border {
     border-color: var(--tertiary-color);
-  }
-  /* Utility Style End */
+}
+/* Utility Style End */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {

@@ -10,6 +10,8 @@ Built using:
 
 * HTML
 * CSS
+* FontAwesome Icons
+* Google Fonts
 
 ## Website
 

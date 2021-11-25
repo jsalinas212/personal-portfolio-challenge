@@ -13,7 +13,7 @@ Built using:
 
 ## Website
 
-(Jorge's Personal Portfolio)[https://jsalinas212.github.io/personal-portfolio-challenge]
+[Jorge's Personal Portfolio](https://jsalinas212.github.io/personal-portfolio-challenge)
 
 ## Author
 

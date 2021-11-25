@@ -157,10 +157,70 @@ header nav ul li a:hover {
 
 /* Content Style Begin */
 content {
-    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+content section {
+    flex: auto;
+    padding: 45px;
+}
+
+content section:nth-child(even) {
+    background: var(--tertiary-color);
+}
+
+content section:nth-child(odd) {
+    color: var(--tertiary-color);
+}
+
+content section h2 {
+    margin: 0 auto;
+    font-size: 42px;
     font-family: var(--headline-style);
 }
+
+content section:nth-child(even) h2 {
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);;
+}
+
+content section:nth-child(odd) h2 {
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+content section p {
+    margin-top: 60px;
+    font-family: var(--text-style);
+    font-weight: bolder;
+    font-size: 18px;
+}
 /* Content Style End */
+
+/* Project Content Style Begin */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Project Content Style End */
+
+/* Contribution Content Style Begin */
+.contribution-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Contribution Content Style End */
+
+/* Skills Content Style Begin */
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Skills Content Style End */
 
 /* Footer Style Begin */
 footer {

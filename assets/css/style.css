@@ -173,6 +173,12 @@ content section div {
     height: 45vw;
 }
 
+.work-item a {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .work-item-underlay {
     position: relative;
     padding: 0;

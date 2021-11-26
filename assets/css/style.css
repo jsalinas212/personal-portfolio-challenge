@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #9eeafd;
+    --primary-color: #86d5e9;
     --secondary-color: #324357;
-    --background-img-url: url("../images/hero-bg.jpg");
+    --tertiary-color: #335c8a;
     --shadow-style: 0 0 10px rgba(0, 0, 0, 0.5);
     --headline-style: Helvetica, Arial, sans-serif;
     --text-style: Helvetica, Arial, sans-serif;
+    --transition-magic: all 600ms;
 }
 
 * {
@@ -63,15 +64,15 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: light;
     font-size: 1.60vw;
-    transition: all 0.6s;
+    transition: var(--transition-magic);
     color: var(--primary-color);
     font-family: var(--headline-style);
     border-bottom: 2px solid var(--primary-color);
 }
 
 header nav ul li a:hover {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    color: var(--tertiary-color);
+    border-bottom: 2px solid var(--tertiary-color);
     text-shadow: none;
 }
 /* Header Style End */
@@ -128,7 +129,7 @@ content section h2 {
 
 content section div {
     flex: 1;
-    padding: 15px 60px;
+    margin: 15px 60px;
 }
 /* Content Style End */
 
@@ -152,28 +153,61 @@ content section div {
 }
 
 .work-item {
-    background-image: url(../images/img_placeholder.png);
-    background-position: top;
-    background-size: cover;
     flex-basis: 35%;
-    height: 125px;
-    padding: 50px;
-    margin: 10px;
-    border: 5px solid var(--primary-color);
+    height: 12vw;
+    margin: 15px 0;
+    border: 6px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.work-item:nth-child(even) {
+    margin-right: 10px;
 }
 
 .work-item:first-child {
+    flex-basis: 100%;
+    margin: 0 0 10px 0;
+    height: 45vw;
+}
+
+.work-item-underlay {
     background-image: url(../images/img_placeholder.png);
     background-position: top;
     background-size: cover;
-    flex-basis: 100%;
-    height: 500px;
-    padding: 50px;
-    margin: 10px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    opacity: .5;
+    z-index: -100;
+    transition: var(--transition-magic);
 }
 
-.work-item:last-child {
+.work-item:last-child .work-item-underlay {
     background-image: url(../images/run-buddy-sc.png);
+}
+
+.work-item:hover .work-item-underlay {
+    opacity: 1;
+}
+
+.work-item-info {
+    padding: 10px;
+    margin: 20px 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    position: absolute;
+}
+
+.work-item-info h3 {
+    font-size: 20px;
+}
+
+.work-item-info {
+    font-size: 14px;
 }
 /* Work Style End */
 

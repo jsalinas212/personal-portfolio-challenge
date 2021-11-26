@@ -10,6 +10,10 @@ Built using:
 
 * HTML
 * CSS
+* Javascript (😉)
+
+Pending Implementation:
+
 * FontAwesome Icons
 * Google Fonts
 

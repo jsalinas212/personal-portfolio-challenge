@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #4c6877;
+    --primary-color: #236486;
     --secondary-color: #9eeafd;
-    --tertiary-color: #2f3642;
+    --tertiary-color: #4e586b;
     --background-img-url: url("../images/hero-bg.jpg");
     --shadow-style: 0 0 10px rgba(0, 0, 0, 0.5);
     --headline-style: Helvetica, Arial, sans-serif;
@@ -102,31 +102,71 @@ header nav ul li a:hover {
 /* Hero Style End */
 
 /* Content Style Begin */
+content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+content section {
+    padding: 20px 10px 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+content section h2 {
+    flex-basis: 300px;
+    padding-right: 15px;
+    color: var(--tertiary-color);
+    font-size: 48px;
+    border-right: 5px solid var(--tertiary-color);
+    text-align: right;
+}
+
+content section div {
+    flex: 1;
+    padding: 10px 60px;
+}
 /* Content Style End */
 
-/* Project Content Style Begin */
-/* Project Content Style End */
+/* About Me Style Begin */
+/* About Me Style End */
 
-/* Contribution Content Style Begin */
-/* Contribution Content Style End */
+/* Work Style Begin */
+/* Work Style End */
 
-/* Skills Content Style Begin */
-/* Skills Content Style End */
+/* Contact Me Style Begin */
+/* Contact Me Style End */
+
+/* Resume Style Begin */
+/* Resume Style End */
 
 /* Footer Style Begin */
 footer {
     background: var(--tertiary-color);
-    width: 100%;
-    padding: 40px 35px;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 footer h2 {
-    font-family: var(--headline-style);
-    color: var(--primary-color);
+    font-weight: bold;
     font-size: 36px;
+    padding: 8px 8px 8px 80px;
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    font-family: var(--headline-style);
+    flex: 0;
+}
+
+footer p {
+    font-family: var(--headline-style);
+    color: var(--secondary-color);
+    font-size: 26px;
     margin: 0;
     text-shadow: var(--shadow-style);
 }

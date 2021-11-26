@@ -32,7 +32,8 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 48px;
-    padding: 8px 8px 8px 80px;
+    padding: 8px 0 8px 80px;
+    flex-basis: 520px;
     color: var(--secondary-color);
     background: var(--primary-color);
     font-family: var(--headline-style);
@@ -80,8 +81,8 @@ header nav ul li a:hover {
 /* Hero Style Start */
 .hero {
     height: 250px;
-    background-image: url(../images/lernantino_bg_hero.png);
-    background-position: right;
+    background-image: url(../images/js-hero-bg.jpg);
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: right;
@@ -213,6 +214,33 @@ content section div {
 /* Work Style End */
 
 /* Contact Me Style Begin */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.50vw;
+    transition: var(--transition-magic);
+    color: var(--secondary-color);
+    font-family: var(--headline-style);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.contact-info ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    text-shadow: none;
+}
 /* Contact Me Style End */
 
 /* Resume Style Begin */
@@ -231,12 +259,12 @@ footer {
 footer h2 {
     font-weight: bold;
     font-size: 36px;
-    padding: 8px 8px 8px 60px;
+    padding: 8px 0 8px 60px;
     margin-right: 10%;
     color: var(--secondary-color);
     background: var(--primary-color);
     font-family: var(--headline-style);
-    flex-basis: 38%;
+    flex-basis: 360px;
     box-shadow: var(--shadow-style);
 }
 

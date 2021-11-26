@@ -53,12 +53,16 @@ header nav ul {
     margin-right: 40px;
 }
 
+header nav ul li {
+    flex: auto;
+}
+
 header nav ul li a {
     text-decoration: none;
     margin-right: 15px;
     padding: 10px 15px;
     font-weight: light;
-    font-size: 1.58vw;
+    font-size: 1.60vw;
     transition: all 0.6s;
     color: var(--secondary-color);
     font-family: var(--headline-style);
@@ -84,7 +88,7 @@ header nav ul li a:hover {
 }
 
 .hero-title {
-    margin: 3% 5%;
+    margin: 30px 5%;
 }
 
 .hero-title h1 {
@@ -164,13 +168,28 @@ footer h2 {
     }
 
     header nav ul {
-        margin-top: 20px;
         width: 100%;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 10px;
+        display: flex;
         justify-content: center;
     }
 
     header nav ul li a {
         font-size: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border: none;
+    }
+
+    header nav ul li a:hover {
+        background: var(--secondary-color);
+        border: none;
     }
 
     footer h2, footer div {
@@ -178,7 +197,7 @@ footer h2 {
         width: 100%;
     }
 
-    .hero-blurb {
+    .hero-title {
         text-align: center;
         width: 100%;
     }

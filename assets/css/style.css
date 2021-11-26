@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #236486;
+    --primary-color: #2e80ac;
     --secondary-color: #9eeafd;
     --tertiary-color: #4e586b;
     --background-img-url: url("../images/hero-bg.jpg");
@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     top: 0;
 }
 
@@ -35,6 +36,7 @@ header h1 {
     color: var(--tertiary-color);
     background: var(--secondary-color);
     font-family: var(--headline-style);
+    box-shadow: var(--shadow-style);
 }
 
 header a {
@@ -48,7 +50,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
     margin-right: 40px;
 }
@@ -98,6 +99,7 @@ header nav ul li a:hover {
     color: var(--tertiary-color);
     background: var(--secondary-color);
     font-family: var(--headline-style);
+    box-shadow: var(--shadow-style);
 }
 /* Hero Style End */
 
@@ -149,26 +151,31 @@ footer {
     padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer h2 {
     font-weight: bold;
     font-size: 36px;
-    padding: 8px 8px 8px 80px;
+    padding: 8px 8px 8px 60px;
+    margin-right: 10%;
     color: var(--tertiary-color);
     background: var(--secondary-color);
     font-family: var(--headline-style);
-    flex: 0;
+    flex-basis: 38%;
+    box-shadow: var(--shadow-style);
 }
 
 footer p {
     font-family: var(--headline-style);
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: 22px;
     margin: 0;
+    padding: 0 10px;
     text-shadow: var(--shadow-style);
+    flex-basis: 40%;
+    text-align: center;
 }
 /* Footer Style End */
 

@@ -145,6 +145,36 @@ content section div {
 /* About Me Style End */
 
 /* Work Style Begin */
+.work-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item {
+    background-image: url(../images/img_placeholder.png);
+    background-position: top;
+    background-size: cover;
+    flex-basis: 35%;
+    height: 125px;
+    padding: 50px;
+    margin: 10px;
+    border: 5px solid var(--primary-color);
+}
+
+.work-item:first-child {
+    background-image: url(../images/img_placeholder.png);
+    background-position: top;
+    background-size: cover;
+    flex-basis: 100%;
+    height: 500px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.work-item:last-child {
+    background-image: url(../images/run-buddy-sc.png);
+}
 /* Work Style End */
 
 /* Contact Me Style Begin */
@@ -206,6 +236,11 @@ footer p {
 
 .secondary-border {
     border-color: var(--secondary-color);
+}
+
+.reset {
+    padding: 0;
+    margin: 0;
 }
 /* Utility Style End */
 

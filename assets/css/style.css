@@ -110,6 +110,7 @@ content {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0 5%;
 }
 
 content section {
@@ -361,23 +362,27 @@ footer p {
     header h1 {
         width: 100%;
         text-align: center;
+        margin: 0;
+        padding: 12px;
+        flex-basis: 100%;
     }
 
     header nav ul {
         width: 100%;
+        flex-basis: 100%;
     }
 
     header nav ul li {
         width: 100%;
-        padding: 10px;
+        padding: 8px 0;
+        flex-basis: 100%;
         display: flex;
         justify-content: center;
     }
 
     header nav ul li a {
         font-size: 20px;
-        width: 100%;
-        height: 100%;
+        flex-basis: 100%;
         margin: 0 auto;
         text-align: center;
         border: none;
@@ -388,21 +393,110 @@ footer p {
         border: none;
     }
 
-    footer h2, footer div {
+    .hero-title {
         text-align: center;
         width: 100%;
     }
 
-    .hero-title {
+    content {
+        padding: 0;
+    }
+    
+    content section {
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    content section h2 {
+        flex-basis: 100%;
+        margin-top: 15%;
+        padding: 0;
+        border-right: none;
+        border-bottom: 5px solid var(--secondary-color);
+        text-align: center;
+    }
+
+    content section div {
+        margin: 0;
+    }
+    
+    .about-info {
+        font-size: 22px;
+        font-weight: normal;
+    }
+    
+    .work-items {
+        flex-direction: column;
+    }
+    
+    .work-item {
+        flex-basis: 100%;
+    }
+    
+    .work-item:nth-child(even) {
+        margin-right: 0;
+    }
+    
+    .work-item:first-child {
+        margin: 0;
+    }
+
+    /* Contact Me MQ Begin */
+    .contact-info {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-info ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+
+    .contact-info ul li {
+        padding: 10px 0;
+    }
+
+    .contact-info ul li a {
+        flex-basis: 200px;
+        font-size: 28px;
+        border-bottom: 3px solid var(--secondary-color);
+    }
+
+    footer h2, footer div, footer p {
         text-align: center;
         width: 100%;
+        flex-basis: 100%;
+        padding: 12px 0;
+        margin: 0;
     }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
+    content section h2 {
+        margin-top: 10%;
+    }
+    
+    .about-info {
+        padding: 20px 10px;
+        margin: 0;
+    }
+    
+    .work-items {
+        padding: 20px 0;
+    }
+    
+    .work-item {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .resume-info {
+        padding: 20px;
     }
 }
 

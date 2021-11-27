@@ -85,8 +85,16 @@ header nav ul li a:hover {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: flex-end;
+}
+
+.hero img {
+    margin: 30px 5%;
+    height: 200px;
+    width: 200px;
+    border: 8px solid var(--primary-color);
+    border-radius: 50%;
 }
 
 .hero-title {
@@ -140,6 +148,9 @@ content section div {
     color: var(--secondary-color);
     font-size: 16px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .about-info p:last-child {

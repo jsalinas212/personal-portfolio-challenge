@@ -466,6 +466,10 @@ footer p {
         border-bottom: 3px solid var(--secondary-color);
     }
 
+    .resume-info {
+        padding: 20px;
+    }
+
     footer h2, footer div, footer p {
         text-align: center;
         width: 100%;
@@ -493,10 +497,6 @@ footer p {
     .work-item {
         padding: 0;
         margin: 10px 0;
-    }
-
-    .resume-info {
-        padding: 20px;
     }
 }
 

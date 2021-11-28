@@ -436,10 +436,12 @@ footer p {
     .about-info {
         font-size: 22px;
         font-weight: normal;
+        padding: 5%;
     }
     
     .work-items {
         flex-direction: column;
+        padding: 5%;
     }
     
     .work-item {
@@ -458,6 +460,7 @@ footer p {
     .contact-info {
         justify-content: center;
         flex-direction: column;
+        padding: 5%;
     }
 
     .contact-info ul {
@@ -478,7 +481,7 @@ footer p {
     }
 
     .resume-info {
-        padding: 20px;
+        padding: 5%;
     }
 
     footer h2, footer div, footer p {

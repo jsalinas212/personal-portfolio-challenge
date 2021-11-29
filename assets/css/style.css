@@ -364,6 +364,7 @@ footer p {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    /* Header MQ Style */
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -404,11 +405,13 @@ footer p {
         border: none;
     }
 
+    /* Hero MQ Style */
     .hero-title {
         text-align: center;
         width: 100%;
     }
 
+    /* Content MQ Style */
     content {
         padding: 0;
     }
@@ -433,30 +436,32 @@ footer p {
         margin: 0;
     }
     
+    /* About MQ Style */
     .about-info {
         font-size: 22px;
         font-weight: normal;
         padding: 5%;
     }
     
+    /* Work MQ Style */
     .work-items {
         flex-direction: column;
         padding: 5%;
+    }
+
+    .work-item:nth-child(n+7) {
+        display: none;
     }
     
     .work-item {
         flex-basis: 100%;
     }
     
-    .work-item:nth-child(even) {
-        margin-right: 0;
-    }
-    
     .work-item:first-child {
         margin: 0;
     }
 
-    /* Contact Me MQ Begin */
+    /* Contact MQ Style */
     .contact-info {
         justify-content: center;
         flex-direction: column;
@@ -480,10 +485,12 @@ footer p {
         border-bottom: 3px solid var(--secondary-color);
     }
 
+    /* Resume MQ Style */
     .resume-info {
         padding: 5%;
     }
 
+    /* Footer MQ Style */
     footer h2, footer div, footer p {
         text-align: center;
         width: 100%;
@@ -495,17 +502,38 @@ footer p {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    /* Content MQ Style */
     content section h2 {
         margin-top: 10%;
     }
+
+    /* Hero MQ Style */
+    .hero {
+        height: 375px;
+    }
+
+    .hero img {
+        height: 150px;
+        width: 150px;
+    }
     
+    .hero-title {
+        margin: 40px 5%;
+    }
+    
+    .hero-title h1 {
+        font-size: 28px;
+    }
+    
+    /* About MQ Style */
     .about-info {
         padding: 20px 10px;
         margin: 0;
     }
-    
+
+    /* Work MQ Style */
     .work-items {
-        padding: 20px 0;
+        padding: 3%;
     }
     
     .work-item {

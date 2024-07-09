@@ -2,7 +2,16 @@
 
 ## About
 
-The purpose of my personal portfolio is to showcase the websites that I designed and built or websites that I have contributed to.
+The purpose of my personal portfolio is to showcase the projects I have completed, am currently working on, or have contributed to.
+
+This includes:
+* Security Research
+* Bug Bounty Hunting
+* SIEM Integration Scripts
+* IaaS Deployment Scripts
+* Self-Hosted Application Scripts
+* Learning/Training
+* Web Design
 
 ## Technologies
 
@@ -12,9 +21,9 @@ Built using:
 * CSS
 * Javascript (😉)
 
-Pending Implementation:
+### ToDo:
 
-* FontAwesome Icons
+* FontAwesome/NerdFont Icons
 * Google Fonts
 
 ## Website
@@ -23,4 +32,4 @@ Pending Implementation:
 
 ## Author
 
-Jorge A Salinas Jr
+JA Salinas Jr

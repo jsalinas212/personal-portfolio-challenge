@@ -158,6 +158,12 @@ content section div {
 .about-info p:last-child {
     margin-top: 20px;
 }
+
+.about-me-list {
+    margin-left: 5%;
+    list-style-type: disc;
+    font-size: 12px;
+}
 /* About Me Style End */
 
 /* Work Style Begin */
